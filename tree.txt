@@ -1,0 +1,1037 @@
+﻿F:\workspace\java-chat-tests>tree /f
+卷 Samsung 980 SSD 1TB 的文件夹 PATH 列表
+卷序列号为 803B-CC8C
+F:.
+│  .dockerignore
+│  .gitignore
+│  dockerfile
+│  git-main-shell-script.bat
+│  git-master-shell-script.bat
+│  pom.xml
+│  README.md
+│
+├─.idea
+│  │  .gitignore
+│  │  compiler.xml
+│  │  encodings.xml
+│  │  jarRepositories.xml
+│  │  misc.xml
+│  │  uiDesigner.xml
+│  │  vcs.xml
+│  │  workspace.xml
+│  │
+│  └─inspectionProfiles
+│          Project_Default.xml
+│
+├─ct-hackathon-api
+│  │  pom.xml
+│  │
+│  ├─logs
+│  │      sys-error.log
+│  │      sys-info.log
+│  │      sys-user.log
+│  │
+│  ├─src
+│  │  ├─main
+│  │  │  ├─java
+│  │  │  │  └─com
+│  │  │  │      └─ctests
+│  │  │  │          │  StartupApplication.java
+│  │  │  │          │
+│  │  │  │          └─controller
+│  │  │  │                  CtExamQuestionOptionController.java
+│  │  │  │                  CtExamQuestionPoolController.java
+│  │  │  │                  CtExamUserAnswerRecordController.java
+│  │  │  │                  TestController.java
+│  │  │  │
+│  │  │  └─resources
+│  │  │      │  application-dev.yml
+│  │  │      │  application-preview.yml
+│  │  │      │  application-prod.yml
+│  │  │      │  application-test.yml
+│  │  │      │  application.yml
+│  │  │      │
+│  │  │      └─db
+│  │  │          └─migration
+│  │  │                  V2021_0730_0000__initDB.sql
+│  │  │
+│  │  └─test
+│  │      └─java
+│  │          └─com
+│  │              └─ctests
+│  │                  └─excel
+│  │                          ImportQuestionTests.java
+│  │
+│  └─target
+│      ├─classes
+│      │  │  application-dev.yml
+│      │  │  application-preview.yml
+│      │  │  application-prod.yml
+│      │  │  application-test.yml
+│      │  │  application.yml
+│      │  │
+│      │  ├─com
+│      │  │  └─ctests
+│      │  │      │  StartupApplication.class
+│      │  │      │
+│      │  │      └─controller
+│      │  │              CtExamQuestionOptionController.class
+│      │  │              CtExamQuestionPoolController.class
+│      │  │              TestController.class
+│      │  │
+│      │  └─db
+│      │      └─migration
+│      │              V2021_0730_0000__initDB.sql
+│      │
+│      ├─generated-sources
+│      │  └─annotations
+│      ├─generated-test-sources
+│      │  └─test-annotations
+│      └─test-classes
+│          └─com
+│              └─ctests
+│                  └─excel
+│                          ImportQuestionTests.class
+│
+├─ct-hackathon-mapper
+│  │  pom.xml
+│  │
+│  ├─src
+│  │  └─main
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─ctests
+│  │      │          └─mapper
+│  │      │                  CtExamQuestionOptionMapper.java
+│  │      │                  CtExamQuestionPoolMapper.java
+│  │      │                  CtExamUserAnswerRecordMapper.java
+│  │      │                  TestUserMapper.java
+│  │      │
+│  │      └─resources
+│  │          └─mapper
+│  │                  CtExamQuestionOptionMapper.xml
+│  │                  CtExamQuestionPoolMapper.xml
+│  │                  CtExamUserAnswerRecordMapper.xml
+│  │                  TestMapper.xml
+│  │
+│  └─target
+│      ├─classes
+│      │  ├─com
+│      │  │  └─ctests
+│      │  │      └─mapper
+│      │  │              CtExamQuestionOptionMapper.class
+│      │  │              CtExamQuestionPoolMapper.class
+│      │  │              TestUserMapper.class
+│      │  │
+│      │  └─mapper
+│      │          CtExamQuestionOptionMapper.xml
+│      │          CtExamQuestionPoolMapper.xml
+│      │          TestMapper.xml
+│      │
+│      ├─generated-sources
+│      │  └─annotations
+│      └─test-classes
+├─ct-hackathon-model
+│  │  pom.xml
+│  │
+│  ├─src
+│  │  └─main
+│  │      └─java
+│  │          └─com
+│  │              └─ctests
+│  │                  └─model
+│  │                      ├─consts
+│  │                      │      CachesConst.java
+│  │                      │
+│  │                      ├─entity
+│  │                      │      CtExamQuestionOption.java
+│  │                      │      CtExamQuestionPool.java
+│  │                      │      CtExamUserAnswerRecord.java
+│  │                      │      TestUser.java
+│  │                      │
+│  │                      ├─input
+│  │                      │      CtExamQuestionPoolInput.java
+│  │                      │      CtExamUserAnswerRecordAddInput.java
+│  │                      │      TestUserAddDto.java
+│  │                      │
+│  │                      ├─listener
+│  │                      │      QuestionExcelVoImportListener.java
+│  │                      │
+│  │                      ├─output
+│  │                      │      CtExamQuestionOptionOutput.java
+│  │                      │      CtExamQuestionPoolOutput.java
+│  │                      │
+│  │                      └─vo
+│  │                              QuestionExcelVo.java
+│  │
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ctests
+│      │          └─model
+│      │              ├─consts
+│      │              │      CachesConst.class
+│      │              │
+│      │              ├─entity
+│      │              │      CtExamQuestionOption.class
+│      │              │      CtExamQuestionPool.class
+│      │              │      TestUser.class
+│      │              │
+│      │              ├─input
+│      │              │      CtExamQuestionPoolInput.class
+│      │              │      TestUserAddDto.class
+│      │              │
+│      │              ├─listener
+│      │              │      QuestionExcelVoImportListener.class
+│      │              │
+│      │              ├─output
+│      │              │      CtExamQuestionOptionOutput.class
+│      │              │      CtExamQuestionPoolOutput.class
+│      │              │
+│      │              └─vo
+│      │                      QuestionExcelVo.class
+│      │
+│      ├─generated-sources
+│      │  └─annotations
+│      └─test-classes
+├─ct-hackathon-service
+│  │  pom.xml
+│  │
+│  ├─src
+│  │  └─main
+│  │      └─java
+│  │          └─com
+│  │              └─ctests
+│  │                  └─service
+│  │                      │  CtExamQuestionOptionService.java
+│  │                      │  CtExamQuestionPoolService.java
+│  │                      │  CtExamUserAnswerRecordService.java
+│  │                      │  TestUserService.java
+│  │                      │
+│  │                      ├─impl
+│  │                      │      CtExamQuestionOptionServiceImpl.java
+│  │                      │      CtExamQuestionPoolServiceImpl.java
+│  │                      │      CtExamUserAnswerRecordServiceImpl.java
+│  │                      │      TestUserServiceImpl.java
+│  │                      │
+│  │                      └─utils
+│  │                              QuestionExcelDealUtil.java
+│  │
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ctests
+│      │          └─service
+│      │              │  CtExamQuestionOptionService.class
+│      │              │  CtExamQuestionPoolService.class
+│      │              │  TestUserService.class
+│      │              │
+│      │              ├─impl
+│      │              │      CtExamQuestionOptionServiceImpl.class
+│      │              │      CtExamQuestionPoolServiceImpl.class
+│      │              │      TestUserServiceImpl.class
+│      │              │
+│      │              └─utils
+│      │                      QuestionExcelDealUtil.class
+│      │
+│      ├─generated-sources
+│      │  └─annotations
+│      └─test-classes
+├─data
+│      真题20230701.xlsx
+│
+├─docs
+│      readme.md
+│
+├─framework
+│  │  .dockerignore
+│  │  .gitignore
+│  │  dockerfile
+│  │  LICENSE
+│  │  pom.xml
+│  │  README.md
+│  │
+│  ├─ct-common
+│  │  │  pom.xml
+│  │  │
+│  │  ├─src
+│  │  │  └─main
+│  │  │      └─java
+│  │  │          └─com
+│  │  │              └─ctests
+│  │  │                  └─common
+│  │  │                      ├─annotation
+│  │  │                      │      DataScope.java
+│  │  │                      │      DataSource.java
+│  │  │                      │      Excel.java
+│  │  │                      │      Excels.java
+│  │  │                      │      Log.java
+│  │  │                      │      RateLimiter.java
+│  │  │                      │      RepeatSubmit.java
+│  │  │                      │
+│  │  │                      ├─config
+│  │  │                      │      CasConfig.java
+│  │  │                      │      HttpProxyConfig.java
+│  │  │                      │      OkHttpConfiguration.java
+│  │  │                      │      ProjectConfig.java
+│  │  │                      │
+│  │  │                      ├─constant
+│  │  │                      │      Constants.java
+│  │  │                      │      GenConstants.java
+│  │  │                      │      HttpStatus.java
+│  │  │                      │      UserConstants.java
+│  │  │                      │
+│  │  │                      ├─enums
+│  │  │                      │      BusinessStatus.java
+│  │  │                      │      BusinessType.java
+│  │  │                      │      DataSourceType.java
+│  │  │                      │      HttpMethod.java
+│  │  │                      │      LimitType.java
+│  │  │                      │      OperatorType.java
+│  │  │                      │      UserStatus.java
+│  │  │                      │
+│  │  │                      ├─exception
+│  │  │                      │  │  GlobalException.java
+│  │  │                      │  │  ServiceException.java
+│  │  │                      │  │  UtilException.java
+│  │  │                      │  │
+│  │  │                      │  ├─base
+│  │  │                      │  │      BaseException.java
+│  │  │                      │  │
+│  │  │                      │  ├─file
+│  │  │                      │  │      FileException.java
+│  │  │                      │  │      FileNameLengthLimitExceededException.java
+│  │  │                      │  │      FileSizeLimitExceededException.java
+│  │  │                      │  │      InvalidExtensionException.java
+│  │  │                      │  │
+│  │  │                      │  ├─job
+│  │  │                      │  │      TaskException.java
+│  │  │                      │  │
+│  │  │                      │  └─user
+│  │  │                      │          CaptchaException.java
+│  │  │                      │          CaptchaExpireException.java
+│  │  │                      │          UserException.java
+│  │  │                      │          UserPasswordNotMatchException.java
+│  │  │                      │
+│  │  │                      ├─filter
+│  │  │                      │      RepeatableFilter.java
+│  │  │                      │      RepeatedlyRequestWrapper.java
+│  │  │                      │      XssFilter.java
+│  │  │                      │      XssHttpServletRequestWrapper.java
+│  │  │                      │
+│  │  │                      └─utils
+│  │  │                          │  Arith.java
+│  │  │                          │  DateUtils.java
+│  │  │                          │  ExceptionUtil.java
+│  │  │                          │  LogUtils.java
+│  │  │                          │  MessageUtils.java
+│  │  │                          │  ServletUtils.java
+│  │  │                          │  StringUtils.java
+│  │  │                          │  Threads.java
+│  │  │                          │  VerifyCodeUtils.java
+│  │  │                          │
+│  │  │                          ├─bean
+│  │  │                          │      BeanUtils.java
+│  │  │                          │      ModelUtils.java
+│  │  │                          │
+│  │  │                          ├─file
+│  │  │                          │      FileTypeUtils.java
+│  │  │                          │      FileUploadUtils.java
+│  │  │                          │      FileUtils.java
+│  │  │                          │      ImageUtils.java
+│  │  │                          │      MimeTypeUtils.java
+│  │  │                          │
+│  │  │                          ├─html
+│  │  │                          │      EscapeUtil.java
+│  │  │                          │      HTMLFilter.java
+│  │  │                          │
+│  │  │                          ├─http
+│  │  │                          │      HttpHelper.java
+│  │  │                          │      HttpUtils.java
+│  │  │                          │
+│  │  │                          ├─ip
+│  │  │                          │      AddressUtils.java
+│  │  │                          │      IpUtils.java
+│  │  │                          │
+│  │  │                          ├─reflect
+│  │  │                          │      ReflectUtils.java
+│  │  │                          │
+│  │  │                          ├─sign
+│  │  │                          │      Base64.java
+│  │  │                          │      Md5Utils.java
+│  │  │                          │      RsaUtils.java
+│  │  │                          │
+│  │  │                          ├─spring
+│  │  │                          │      SpringUtils.java
+│  │  │                          │
+│  │  │                          ├─sql
+│  │  │                          │      SqlUtil.java
+│  │  │                          │
+│  │  │                          ├─text
+│  │  │                          │      CharsetKit.java
+│  │  │                          │      Convert.java
+│  │  │                          │      StrFormatter.java
+│  │  │                          │
+│  │  │                          └─uuid
+│  │  │                                  IdUtils.java
+│  │  │                                  UUID.java
+│  │  │
+│  │  └─target
+│  │      ├─classes
+│  │      │  └─com
+│  │      │      └─ctests
+│  │      │          └─common
+│  │      │              ├─annotation
+│  │      │              │      DataScope.class
+│  │      │              │      DataSource.class
+│  │      │              │      Excel$Align.class
+│  │      │              │      Excel$ColumnType.class
+│  │      │              │      Excel$Type.class
+│  │      │              │      Excel.class
+│  │      │              │      Excels.class
+│  │      │              │      Log.class
+│  │      │              │      RateLimiter.class
+│  │      │              │      RepeatSubmit.class
+│  │      │              │
+│  │      │              ├─config
+│  │      │              │      CasConfig.class
+│  │      │              │      HttpProxyConfig.class
+│  │      │              │      OkHttpConfiguration$1.class
+│  │      │              │      OkHttpConfiguration.class
+│  │      │              │      ProjectConfig.class
+│  │      │              │
+│  │      │              ├─constant
+│  │      │              │      Constants.class
+│  │      │              │      GenConstants.class
+│  │      │              │      HttpStatus.class
+│  │      │              │      UserConstants.class
+│  │      │              │
+│  │      │              ├─enums
+│  │      │              │      BusinessStatus.class
+│  │      │              │      BusinessType.class
+│  │      │              │      DataSourceType.class
+│  │      │              │      HttpMethod.class
+│  │      │              │      LimitType.class
+│  │      │              │      OperatorType.class
+│  │      │              │      UserStatus.class
+│  │      │              │
+│  │      │              ├─exception
+│  │      │              │  │  GlobalException.class
+│  │      │              │  │  ServiceException.class
+│  │      │              │  │  UtilException.class
+│  │      │              │  │
+│  │      │              │  ├─base
+│  │      │              │  │      BaseException.class
+│  │      │              │  │
+│  │      │              │  ├─file
+│  │      │              │  │      FileException.class
+│  │      │              │  │      FileNameLengthLimitExceededException.class
+│  │      │              │  │      FileSizeLimitExceededException.class
+│  │      │              │  │      InvalidExtensionException$InvalidFlashExtensionException.class
+│  │      │              │  │      InvalidExtensionException$InvalidImageExtensionException.class
+│  │      │              │  │      InvalidExtensionException$InvalidMediaExtensionException.class
+│  │      │              │  │      InvalidExtensionException$InvalidVideoExtensionException.class
+│  │      │              │  │      InvalidExtensionException.class
+│  │      │              │  │
+│  │      │              │  ├─job
+│  │      │              │  │      TaskException$Code.class
+│  │      │              │  │      TaskException.class
+│  │      │              │  │
+│  │      │              │  └─user
+│  │      │              │          CaptchaException.class
+│  │      │              │          CaptchaExpireException.class
+│  │      │              │          UserException.class
+│  │      │              │          UserPasswordNotMatchException.class
+│  │      │              │
+│  │      │              ├─filter
+│  │      │              │      RepeatableFilter.class
+│  │      │              │      RepeatedlyRequestWrapper$1.class
+│  │      │              │      RepeatedlyRequestWrapper.class
+│  │      │              │      XssFilter.class
+│  │      │              │      XssHttpServletRequestWrapper$1.class
+│  │      │              │      XssHttpServletRequestWrapper.class
+│  │      │              │
+│  │      │              └─utils
+│  │      │                  │  Arith.class
+│  │      │                  │  DateUtils.class
+│  │      │                  │  ExceptionUtil.class
+│  │      │                  │  LogUtils.class
+│  │      │                  │  MessageUtils.class
+│  │      │                  │  ServletUtils.class
+│  │      │                  │  StringUtils.class
+│  │      │                  │  Threads.class
+│  │      │                  │  VerifyCodeUtils.class
+│  │      │                  │
+│  │      │                  ├─bean
+│  │      │                  │      BeanUtils.class
+│  │      │                  │      ModelUtils.class
+│  │      │                  │
+│  │      │                  ├─file
+│  │      │                  │      FileTypeUtils.class
+│  │      │                  │      FileUploadUtils.class
+│  │      │                  │      FileUtils.class
+│  │      │                  │      ImageUtils.class
+│  │      │                  │      MimeTypeUtils.class
+│  │      │                  │
+│  │      │                  ├─html
+│  │      │                  │      EscapeUtil.class
+│  │      │                  │      HTMLFilter.class
+│  │      │                  │
+│  │      │                  ├─http
+│  │      │                  │      HttpHelper.class
+│  │      │                  │      HttpUtils$TrustAnyHostnameVerifier.class
+│  │      │                  │      HttpUtils$TrustAnyTrustManager.class
+│  │      │                  │      HttpUtils.class
+│  │      │                  │
+│  │      │                  ├─ip
+│  │      │                  │      AddressUtils.class
+│  │      │                  │      IpUtils.class
+│  │      │                  │
+│  │      │                  ├─reflect
+│  │      │                  │      ReflectUtils.class
+│  │      │                  │
+│  │      │                  ├─sign
+│  │      │                  │      Base64.class
+│  │      │                  │      Md5Utils.class
+│  │      │                  │      RsaUtils$RsaKeyPair.class
+│  │      │                  │      RsaUtils.class
+│  │      │                  │
+│  │      │                  ├─spring
+│  │      │                  │      SpringUtils.class
+│  │      │                  │
+│  │      │                  ├─sql
+│  │      │                  │      SqlUtil.class
+│  │      │                  │
+│  │      │                  ├─text
+│  │      │                  │      CharsetKit.class
+│  │      │                  │      Convert.class
+│  │      │                  │      StrFormatter.class
+│  │      │                  │
+│  │      │                  └─uuid
+│  │      │                          IdUtils.class
+│  │      │                          UUID$Holder.class
+│  │      │                          UUID.class
+│  │      │
+│  │      ├─generated-sources
+│  │      │  └─annotations
+│  │      └─test-classes
+│  ├─ct-frm-api
+│  │  │  pom.xml
+│  │  │
+│  │  └─src
+│  │      └─main
+│  │          └─java
+│  │              └─com
+│  │                  └─ctests
+│  │                      │  StartupApplication.java
+│  │                      │
+│  │                      └─controller
+│  │                              TestController.java
+│  │
+│  ├─ct-frm-base
+│  │  │  pom.xml
+│  │  │
+│  │  ├─src
+│  │  │  └─main
+│  │  │      ├─java
+│  │  │      │  └─com
+│  │  │      │      └─ctests
+│  │  │      │          ├─controller
+│  │  │      │          │      AboutController.java
+│  │  │      │          │      BaseController.java
+│  │  │      │          │      CommonController.java
+│  │  │      │          │      HomeController.java
+│  │  │      │          │      ResourceController.java
+│  │  │      │          │      RoleController.java
+│  │  │      │          │      RoleResourceController.java
+│  │  │      │          │      SysLogininforController.java
+│  │  │      │          │      SysOperlogController.java
+│  │  │      │          │      SysUserOnlineController.java
+│  │  │      │          │      UserController.java
+│  │  │      │          │      UserRoleController.java
+│  │  │      │          │
+│  │  │      │          └─framework
+│  │  │      │              ├─aspectj
+│  │  │      │              │      DataScopeAspect.java
+│  │  │      │              │      DataSourceAspect.java
+│  │  │      │              │      LogAspect.java
+│  │  │      │              │      RateLimiterAspect.java
+│  │  │      │              │
+│  │  │      │              ├─config
+│  │  │      │              │  │  ApplicationConfig.java
+│  │  │      │              │  │  DruidConfig.java
+│  │  │      │              │  │  FakeFlywayConfig.java
+│  │  │      │              │  │  FastJson2JsonRedisSerializer.java
+│  │  │      │              │  │  FilterConfig.java
+│  │  │      │              │  │  ModelMapperConfig.java
+│  │  │      │              │  │  MyBatisConfig.java
+│  │  │      │              │  │  MybatisMetaObjectHandler.java
+│  │  │      │              │  │  RedisConfig.java
+│  │  │      │              │  │  RedisPrefixedKeySerializer.java
+│  │  │      │              │  │  ResourcesConfig.java
+│  │  │      │              │  │  SecurityConfig.java
+│  │  │      │              │  │  ServerConfig.java
+│  │  │      │              │  │  SwaggerConfig.java
+│  │  │      │              │  │  ThreadPoolConfig.java
+│  │  │      │              │  │  XxlJobConfig.java
+│  │  │      │              │  │
+│  │  │      │              │  └─properties
+│  │  │      │              │          ApiUserProperty.java
+│  │  │      │              │          ApiUsersProperties.java
+│  │  │      │              │          DruidProperties.java
+│  │  │      │              │
+│  │  │      │              ├─datasource
+│  │  │      │              │      DynamicDataSource.java
+│  │  │      │              │      DynamicDataSourceContextHolder.java
+│  │  │      │              │
+│  │  │      │              ├─exception
+│  │  │      │              │      GlobalExceptionHandler.java
+│  │  │      │              │
+│  │  │      │              ├─interceptor
+│  │  │      │              │  │  RepeatSubmitInterceptor.java
+│  │  │      │              │  │
+│  │  │      │              │  └─impl
+│  │  │      │              │          SameUrlDataInterceptor.java
+│  │  │      │              │
+│  │  │      │              ├─job
+│  │  │      │              │      SampleJob.java
+│  │  │      │              │
+│  │  │      │              └─security
+│  │  │      │                  ├─encoder
+│  │  │      │                  │      SecurityMd5Encoder.java
+│  │  │      │                  │
+│  │  │      │                  ├─filter
+│  │  │      │                  │      ApiAuthenticationTokenFilter.java
+│  │  │      │                  │      JwtAuthenticationTokenFilter.java
+│  │  │      │                  │
+│  │  │      │                  ├─handle
+│  │  │      │                  │      AuthenticationEntryPointImpl.java
+│  │  │      │                  │      LogoutSuccessHandlerImpl.java
+│  │  │      │                  │
+│  │  │      │                  ├─provider
+│  │  │      │                  │      ApiAuthenticationProvider.java
+│  │  │      │                  │      ApiAuthenticationToken.java
+│  │  │      │                  │
+│  │  │      │                  └─service
+│  │  │      │                          PermissionExaminator.java
+│  │  │      │                          UserDetailsServiceImpl.java
+│  │  │      │
+│  │  │      └─resources
+│  │  │          │  banner.txt
+│  │  │          │  logback-spring.xml
+│  │  │          │
+│  │  │          ├─i18n
+│  │  │          │      messages.properties
+│  │  │          │
+│  │  │          ├─META-INF
+│  │  │          │      spring-devtools.properties
+│  │  │          │
+│  │  │          └─mybatis
+│  │  │                  mybatis-config.xml
+│  │  │
+│  │  └─target
+│  │      ├─classes
+│  │      │  │  banner.txt
+│  │      │  │  logback-spring.xml
+│  │      │  │
+│  │      │  ├─com
+│  │      │  │  └─ctests
+│  │      │  │      ├─controller
+│  │      │  │      │      AboutController.class
+│  │      │  │      │      BaseController$1.class
+│  │      │  │      │      BaseController.class
+│  │      │  │      │      CommonController.class
+│  │      │  │      │      HomeController.class
+│  │      │  │      │      ResourceController.class
+│  │      │  │      │      RoleController$1.class
+│  │      │  │      │      RoleController.class
+│  │      │  │      │      RoleResourceController.class
+│  │      │  │      │      SysLogininforController.class
+│  │      │  │      │      SysOperlogController.class
+│  │      │  │      │      SysUserOnlineController.class
+│  │      │  │      │      UserController.class
+│  │      │  │      │      UserRoleController.class
+│  │      │  │      │
+│  │      │  │      └─framework
+│  │      │  │          ├─aspectj
+│  │      │  │          │      DataScopeAspect.class
+│  │      │  │          │      DataSourceAspect.class
+│  │      │  │          │      LogAspect.class
+│  │      │  │          │      RateLimiterAspect.class
+│  │      │  │          │
+│  │      │  │          ├─config
+│  │      │  │          │  │  ApplicationConfig.class
+│  │      │  │          │  │  DruidConfig$1.class
+│  │      │  │          │  │  DruidConfig.class
+│  │      │  │          │  │  FakeFlywayConfig.class
+│  │      │  │          │  │  FastJson2JsonRedisSerializer.class
+│  │      │  │          │  │  FilterConfig.class
+│  │      │  │          │  │  ModelMapperConfig.class
+│  │      │  │          │  │  MyBatisConfig.class
+│  │      │  │          │  │  MybatisMetaObjectHandler.class
+│  │      │  │          │  │  RedisConfig.class
+│  │      │  │          │  │  RedisPrefixedKeySerializer.class
+│  │      │  │          │  │  ResourcesConfig.class
+│  │      │  │          │  │  SecurityConfig.class
+│  │      │  │          │  │  ServerConfig.class
+│  │      │  │          │  │  SwaggerConfig.class
+│  │      │  │          │  │  ThreadPoolConfig$1.class
+│  │      │  │          │  │  ThreadPoolConfig.class
+│  │      │  │          │  │  XxlJobConfig.class
+│  │      │  │          │  │
+│  │      │  │          │  └─properties
+│  │      │  │          │          ApiUserProperty.class
+│  │      │  │          │          ApiUsersProperties.class
+│  │      │  │          │          DruidProperties.class
+│  │      │  │          │
+│  │      │  │          ├─datasource
+│  │      │  │          │      DynamicDataSource.class
+│  │      │  │          │      DynamicDataSourceContextHolder.class
+│  │      │  │          │
+│  │      │  │          ├─exception
+│  │      │  │          │      GlobalExceptionHandler.class
+│  │      │  │          │
+│  │      │  │          ├─interceptor
+│  │      │  │          │  │  RepeatSubmitInterceptor.class
+│  │      │  │          │  │
+│  │      │  │          │  └─impl
+│  │      │  │          │          SameUrlDataInterceptor.class
+│  │      │  │          │
+│  │      │  │          ├─job
+│  │      │  │          │      SampleJob.class
+│  │      │  │          │
+│  │      │  │          └─security
+│  │      │  │              ├─encoder
+│  │      │  │              │      SecurityMd5Encoder.class
+│  │      │  │              │
+│  │      │  │              ├─filter
+│  │      │  │              │      ApiAuthenticationTokenFilter.class
+│  │      │  │              │      JwtAuthenticationTokenFilter.class
+│  │      │  │              │
+│  │      │  │              ├─handle
+│  │      │  │              │      AuthenticationEntryPointImpl.class
+│  │      │  │              │      LogoutSuccessHandlerImpl.class
+│  │      │  │              │
+│  │      │  │              ├─provider
+│  │      │  │              │      ApiAuthenticationProvider.class
+│  │      │  │              │      ApiAuthenticationToken.class
+│  │      │  │              │
+│  │      │  │              └─service
+│  │      │  │                      PermissionExaminator.class
+│  │      │  │                      UserDetailsServiceImpl.class
+│  │      │  │
+│  │      │  ├─i18n
+│  │      │  │      messages.properties
+│  │      │  │
+│  │      │  ├─META-INF
+│  │      │  │      spring-devtools.properties
+│  │      │  │
+│  │      │  └─mybatis
+│  │      │          mybatis-config.xml
+│  │      │
+│  │      ├─generated-sources
+│  │      │  └─annotations
+│  │      └─test-classes
+│  ├─ct-frm-mapper
+│  │  │  pom.xml
+│  │  │
+│  │  ├─src
+│  │  │  └─main
+│  │  │      ├─java
+│  │  │      │  └─com
+│  │  │      │      └─ctests
+│  │  │      │          └─mapper
+│  │  │      │              └─system
+│  │  │      │                      ResourceMapper.java
+│  │  │      │                      RoleMapper.java
+│  │  │      │                      RoleResourceMapper.java
+│  │  │      │                      SysLogininforMapper.java
+│  │  │      │                      SysOperLogMapper.java
+│  │  │      │                      UserMapper.java
+│  │  │      │                      UserRoleMapper.java
+│  │  │      │
+│  │  │      └─resources
+│  │  │          └─mapper
+│  │  │              └─system
+│  │  │                      ResourceMapper.xml
+│  │  │                      RoleMapper.xml
+│  │  │                      RoleResourceMapper.xml
+│  │  │                      SysLogininforMapper.xml
+│  │  │                      SysOperLogMapper.xml
+│  │  │                      UserMapper.xml
+│  │  │                      UserRoleMapper.xml
+│  │  │
+│  │  └─target
+│  │      ├─classes
+│  │      │  ├─com
+│  │      │  │  └─ctests
+│  │      │  │      └─mapper
+│  │      │  │          └─system
+│  │      │  │                  ResourceMapper.class
+│  │      │  │                  RoleMapper.class
+│  │      │  │                  RoleResourceMapper.class
+│  │      │  │                  SysLogininforMapper.class
+│  │      │  │                  SysOperLogMapper.class
+│  │      │  │                  UserMapper.class
+│  │      │  │                  UserRoleMapper.class
+│  │      │  │
+│  │      │  └─mapper
+│  │      │      └─system
+│  │      │              ResourceMapper.xml
+│  │      │              RoleMapper.xml
+│  │      │              RoleResourceMapper.xml
+│  │      │              SysLogininforMapper.xml
+│  │      │              SysOperLogMapper.xml
+│  │      │              UserMapper.xml
+│  │      │              UserRoleMapper.xml
+│  │      │
+│  │      ├─generated-sources
+│  │      │  └─annotations
+│  │      └─test-classes
+│  ├─ct-frm-model
+│  │  │  pom.xml
+│  │  │
+│  │  ├─src
+│  │  │  └─main
+│  │  │      └─java
+│  │  │          └─com
+│  │  │              └─ctests
+│  │  │                  └─model
+│  │  │                      │  AjaxResult.java
+│  │  │                      │  LoginUser.java
+│  │  │                      │  PageInfo.java
+│  │  │                      │
+│  │  │                      ├─entity
+│  │  │                      │      BaseEntity.java
+│  │  │                      │      Resource.java
+│  │  │                      │      Role.java
+│  │  │                      │      RoleResource.java
+│  │  │                      │      SysAppendix.java
+│  │  │                      │      SysDictData.java
+│  │  │                      │      SysLogininfor.java
+│  │  │                      │      SysOperLog.java
+│  │  │                      │      SysUserOnline.java
+│  │  │                      │      User.java
+│  │  │                      │      UserRole.java
+│  │  │                      │
+│  │  │                      ├─input
+│  │  │                      │      LoginBody.java
+│  │  │                      │      LoginCasBody.java
+│  │  │                      │      LoginInput.java
+│  │  │                      │      ResourceAddInput.java
+│  │  │                      │      ResourceEditInput.java
+│  │  │                      │      RoleAddInput.java
+│  │  │                      │      RoleEditInput.java
+│  │  │                      │      RoleResAddInput.java
+│  │  │                      │      RoleSearchInput.java
+│  │  │                      │      UACValidateInput.java
+│  │  │                      │      UserAddInput.java
+│  │  │                      │      UserEditInput.java
+│  │  │                      │      UserPwdEditInput.java
+│  │  │                      │      UserPwdResetInput.java
+│  │  │                      │      UserRoleAddInput.java
+│  │  │                      │      UserRoleSearchInput.java
+│  │  │                      │      UserSearchInput.java
+│  │  │                      │      UserSyncInput.java
+│  │  │                      │
+│  │  │                      └─output
+│  │  │                              PageVo.java
+│  │  │                              ResourceTreeVo.java
+│  │  │                              ResourceVo.java
+│  │  │                              RoleResVo.java
+│  │  │                              RoleVo.java
+│  │  │                              UACResultVo.java
+│  │  │                              UACValidateVo.java
+│  │  │                              UserLoginProfileVo.java
+│  │  │                              UserLoginVo.java
+│  │  │                              UserRoleIdVo.java
+│  │  │                              UserRoleInterVo.java
+│  │  │                              UserRoleVo.java
+│  │  │                              UserVo.java
+│  │  │
+│  │  └─target
+│  │      ├─classes
+│  │      │  └─com
+│  │      │      └─ctests
+│  │      │          └─model
+│  │      │              │  AjaxResult.class
+│  │      │              │  LoginUser.class
+│  │      │              │  PageInfo.class
+│  │      │              │
+│  │      │              ├─entity
+│  │      │              │      BaseEntity.class
+│  │      │              │      Resource.class
+│  │      │              │      Role.class
+│  │      │              │      RoleResource.class
+│  │      │              │      SysAppendix.class
+│  │      │              │      SysDictData.class
+│  │      │              │      SysLogininfor.class
+│  │      │              │      SysOperLog.class
+│  │      │              │      SysUserOnline.class
+│  │      │              │      User.class
+│  │      │              │      UserRole.class
+│  │      │              │
+│  │      │              ├─input
+│  │      │              │      LoginBody.class
+│  │      │              │      LoginCasBody.class
+│  │      │              │      LoginInput.class
+│  │      │              │      ResourceAddInput.class
+│  │      │              │      ResourceEditInput.class
+│  │      │              │      RoleAddInput.class
+│  │      │              │      RoleEditInput.class
+│  │      │              │      RoleResAddInput.class
+│  │      │              │      RoleSearchInput.class
+│  │      │              │      UACValidateInput.class
+│  │      │              │      UserAddInput.class
+│  │      │              │      UserEditInput.class
+│  │      │              │      UserPwdEditInput.class
+│  │      │              │      UserPwdResetInput.class
+│  │      │              │      UserRoleAddInput.class
+│  │      │              │      UserRoleSearchInput.class
+│  │      │              │      UserSearchInput.class
+│  │      │              │      UserSyncInput.class
+│  │      │              │
+│  │      │              └─output
+│  │      │                      PageVo.class
+│  │      │                      ResourceTreeVo.class
+│  │      │                      ResourceVo.class
+│  │      │                      RoleResVo.class
+│  │      │                      RoleVo.class
+│  │      │                      UACResultVo.class
+│  │      │                      UACValidateVo.class
+│  │      │                      UserLoginProfileVo.class
+│  │      │                      UserLoginVo.class
+│  │      │                      UserRoleIdVo.class
+│  │      │                      UserRoleInterVo.class
+│  │      │                      UserRoleVo.class
+│  │      │                      UserVo.class
+│  │      │
+│  │      ├─generated-sources
+│  │      │  └─annotations
+│  │      └─test-classes
+│  ├─ct-frm-parent
+│  │      pom.xml
+│  │
+│  ├─ct-frm-service
+│  │  │  pom.xml
+│  │  │
+│  │  ├─src
+│  │  │  └─main
+│  │  │      └─java
+│  │  │          └─com
+│  │  │              └─ctests
+│  │  │                  └─service
+│  │  │                      ├─async
+│  │  │                      │  │  AsyncManager.java
+│  │  │                      │  │  ShutdownManager.java
+│  │  │                      │  │
+│  │  │                      │  └─factory
+│  │  │                      │          AsyncFactory.java
+│  │  │                      │
+│  │  │                      ├─framework
+│  │  │                      │      SysLoginService.java
+│  │  │                      │      SysTokenService.java
+│  │  │                      │
+│  │  │                      ├─system
+│  │  │                      │  │  IMailService.java
+│  │  │                      │  │  ISysLogininforService.java
+│  │  │                      │  │  ISysOperLogService.java
+│  │  │                      │  │  ISysUserOnlineService.java
+│  │  │                      │  │  ResourceService.java
+│  │  │                      │  │  RoleResourceService.java
+│  │  │                      │  │  RoleService.java
+│  │  │                      │  │  UACService.java
+│  │  │                      │  │  UserRoleService.java
+│  │  │                      │  │  UserService.java
+│  │  │                      │  │
+│  │  │                      │  └─impl
+│  │  │                      │          MailServiceImpl.java
+│  │  │                      │          ResourceServiceImpl.java
+│  │  │                      │          RoleResourceServiceImpl.java
+│  │  │                      │          RoleServiceImpl.java
+│  │  │                      │          SysLogininforServiceImpl.java
+│  │  │                      │          SysOperLogServiceImpl.java
+│  │  │                      │          SysUserOnlineServiceImpl.java
+│  │  │                      │          UACServiceImpl.java
+│  │  │                      │          UserRoleServiceImpl.java
+│  │  │                      │          UserServiceImpl.java
+│  │  │                      │
+│  │  │                      └─utils
+│  │  │                              DictUtils.java
+│  │  │                              ExcelUtil.java
+│  │  │                              PageVoTemplate.java
+│  │  │                              RedisCache.java
+│  │  │                              SecurityUtils.java
+│  │  │
+│  │  └─target
+│  │      ├─classes
+│  │      │  └─com
+│  │      │      └─ctests
+│  │      │          └─service
+│  │      │              ├─async
+│  │      │              │  │  AsyncManager.class
+│  │      │              │  │  ShutdownManager.class
+│  │      │              │  │
+│  │      │              │  └─factory
+│  │      │              │          AsyncFactory$1.class
+│  │      │              │          AsyncFactory$2.class
+│  │      │              │          AsyncFactory.class
+│  │      │              │
+│  │      │              ├─framework
+│  │      │              │      SysLoginService.class
+│  │      │              │      SysTokenService.class
+│  │      │              │
+│  │      │              ├─system
+│  │      │              │  │  IMailService.class
+│  │      │              │  │  ISysLogininforService.class
+│  │      │              │  │  ISysOperLogService.class
+│  │      │              │  │  ISysUserOnlineService.class
+│  │      │              │  │  ResourceService.class
+│  │      │              │  │  RoleResourceService.class
+│  │      │              │  │  RoleService.class
+│  │      │              │  │  UACService.class
+│  │      │              │  │  UserRoleService.class
+│  │      │              │  │  UserService.class
+│  │      │              │  │
+│  │      │              │  └─impl
+│  │      │              │          MailServiceImpl.class
+│  │      │              │          ResourceServiceImpl$1.class
+│  │      │              │          ResourceServiceImpl.class
+│  │      │              │          RoleResourceServiceImpl.class
+│  │      │              │          RoleServiceImpl.class
+│  │      │              │          SysLogininforServiceImpl.class
+│  │      │              │          SysOperLogServiceImpl.class
+│  │      │              │          SysUserOnlineServiceImpl.class
+│  │      │              │          UACServiceImpl$1.class
+│  │      │              │          UACServiceImpl.class
+│  │      │              │          UserRoleServiceImpl.class
+│  │      │              │          UserServiceImpl$1.class
+│  │      │              │          UserServiceImpl.class
+│  │      │              │
+│  │      │              └─utils
+│  │      │                      DictUtils.class
+│  │      │                      ExcelUtil.class
+│  │      │                      PageVoTemplate.class
+│  │      │                      RedisCache.class
+│  │      │                      SecurityUtils.class
+│  │      │
+│  │      ├─generated-sources
+│  │      │  └─annotations
+│  │      └─test-classes
+│  └─docs
+│          dblog_tables_create.sql
+│          find_in_set.sql
+│          java3.md
+│          Java培训.md
+│          Java基础.md
+│          Java模型验证.md
+│
+├─logs
+│      sys-error.log
+│      sys-info.log
+│      sys-user.log
+│
+└─sql
+        Common.LogDB-create.sql
+        Common.LogDB-insert.sql
+        新项目需要做的SQL 部分.sql
